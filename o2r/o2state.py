@@ -239,8 +239,8 @@ class o2state:
         if( self.read_file_in is not None ):
             return
 
-        ext = self.args.ext if self.args.ext is not None else 'vld'
-        prefix = self.args.prefix if self.args.prefix is not None else ('%s - ' % self.name)
+        ext = self.args.ext if self.args.ext is not None else ''
+        prefix = self.args.prefix if self.args.prefix is not None else ''
         fname = self.get_next_filename()
 
         while( fname is not None ):

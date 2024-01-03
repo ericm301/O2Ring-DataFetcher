@@ -32,7 +32,7 @@ async def main():
     arg_parser.add_argument( '--keep-going', help='Do not disconnect when finger is not present', action="store_true" )
     arg_parser.add_argument( '-m', '--multi', help='Keep scanning for multiple devices', action="store_true" )
     arg_parser.add_argument( '-p', '--prefix', help='Downloaded file prefix (default: "[BT Name] - ")', metavar='PREFIX' )
-    arg_parser.add_argument( '-e', '--ext', help='Downloaded file extension (default: vld)', default='vld', metavar='EXT' )
+    arg_parser.add_argument( '-e', '--ext', help='Downloaded file extension (default: vld)', default='', metavar='EXT' )
     arg_parser.add_argument( '--csv', help='Convert downloaded file to CSV', action="store_true" )
 
     # the O2Ring changes the o2 alert value to 90 if >95 is provided
